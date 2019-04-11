@@ -1,0 +1,1 @@
+docker service logs -f $(docker service ps engineering-bay | awk 'NR==2 {print $1}')
